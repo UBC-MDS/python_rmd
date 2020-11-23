@@ -32,7 +32,7 @@ titanic.head()
 
 ### plot data
 
-I currently cannot make altair work in `.Rmd` chunks, but it doens't bother me so much given that I can pass the python data frame into `ggplot` using `py$data_frame` syntax 🤷.
+Using `ggplot` to plot the data using the `py$data_frame` syntax:
 
 ```{r plot, warning=FALSE, fig.height=4, fig.width=4}
 ggplot2::ggplot(py$titanic, aes(x = age, y = fare)) +
