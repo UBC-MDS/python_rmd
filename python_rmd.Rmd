@@ -27,7 +27,12 @@ Let's load the titanic data and view the top of the data set:
 
 ```{python data}
 titanic  = pd.read_csv("../data/titanic.csv")
-titanic.head()
+#titanic.head()
+```
+
+```{r display-data}
+head(py$titanic) |>
+  knitr::kable()
 ```
 
 ### plot data
